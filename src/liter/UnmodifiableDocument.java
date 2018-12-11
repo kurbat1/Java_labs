@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayList;
 
-public class NewDocument extends Pages {
+public class UnmodifiableDocument extends Pages {
 
-    public NewDocument(Document doc) {
+    public UnmodifiableDocument(Document doc) {
         this.intro = doc.getIntro();
         this.words = doc.getWords();
         this.name = doc.getName();

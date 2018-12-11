@@ -3,7 +3,7 @@ package features;
 import basis.Document;
 import fablic.BookFactory;
 import fablic.Factory;
-import liter.NewDocument;
+import liter.UnmodifiableDocument;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +37,6 @@ public class Utils {
         return factory.createInstance();
     }
     public static Document unmodifiableDocument(Document document){
-        return new NewDocument(document);
+        return new UnmodifiableDocument(document);
     }
 }
