@@ -10,6 +10,7 @@ import java.util.Map;
 public class main {
 
     public static void main(String[] args) {
+      //  new Thread(() -> System.out.println("Hello world!")).start();
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(12);
         arrayList.add(1);
@@ -49,5 +50,6 @@ public class main {
         Books.forEach(System.out::println);
         Journals.forEach(System.out::println);
     }
+
 
 }

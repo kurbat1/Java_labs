@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Byte {
-    public static <T extends Document> void output(T o, OutputStream out) throws IOException {
+    public static <T extends Document> void output(T o, OutputStream out) throws IOException { //T универсальный параметр
         o.output(out);
     }
 

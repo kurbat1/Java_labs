@@ -4,6 +4,8 @@ import features.Serialization;
 import features.Text;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class test {
@@ -13,7 +15,7 @@ public class test {
         this.documents = docs;
     }
 
-    public void testSymbols(){
+    public void testSymbols() {
         try (FileWriter fileWriter = new FileWriter("output_text")) {
             Text.write(documents.get(0), fileWriter);
         } catch (IOException e) {
@@ -35,7 +37,8 @@ public class test {
             e.printStackTrace();
         }
     }
-    public void testSerialization(){
+
+    public void testSerialization() {
 
         try (FileOutputStream fileOutputStream = new FileOutputStream("output_serialize")) {
             Serialization.serialize(documents.get(0), fileOutputStream);
@@ -60,7 +63,7 @@ public class test {
         }
     }
 
-    public void testBytes(){
+    public void testBytes() {
         try (FileOutputStream fileOutputStream = new FileOutputStream("output")) {
             Byte.output(documents.get(0), fileOutputStream);
         } catch (IOException e) {
@@ -82,6 +85,7 @@ public class test {
             e.printStackTrace();
         }
     }
-
-
 }
+
+
+
