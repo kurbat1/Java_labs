@@ -14,6 +14,7 @@ public class main {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(12);
         arrayList.add(1);
+        arrayList.add(21);
         Book Book = new Book("Argen", arrayList, 64);
         Book Book2 = new Book();
         try {

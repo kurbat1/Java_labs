@@ -73,10 +73,10 @@ public abstract class Pages implements Document {
 
     @Override
     public Iterator<Integer> iterator() {
-        return new IterableParagraph();
+        return new IterableWords();
     }
 
-    private class IterableParagraph implements Iterator<Integer> {
+    private class IterableWords implements Iterator<Integer> {
         Iterator iter = words.iterator();
 
         @Override
